@@ -1,8 +1,7 @@
 #!/bin/zsh
 
 # Work in progress. 
-# Installs VirtualBox extensions pack.
-# kext-consent.
+# Replace Extension pack due to upgrade.
 
 # Author: ekarlsson66@gmail.com
 # Date: 2019-11-11
@@ -14,8 +13,6 @@ p="/$HOME/Applications/VirtualBox.app/Contents/MacOS/ExtensionPacks"
 
 
 VBoxManage extpack install $p $f --replace
-
-/usr/sbin/spctl kext-consent add "VB5E2TV963"
 
 
 exit 0
