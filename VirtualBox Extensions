@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+# Work in progress. 
 # Installs VirtualBox extensions pack.
 # kext-consent.
 
