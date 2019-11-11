@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+# Installs VirtualBox extensions pack.
+# kext-consent.
+
+# Author: ekarlsson66@gmail.com
+# Date: 2019-11-11
+# Version: 001
+ 
+
+f="Oracle_VM_VirtualBox_Extension_Pack-6.0.14.vbox-extpack"
+p="/$HOME/Applications/VirtualBox.app/Contents/MacOS/ExtensionPacks"
+
+
+VBoxManage extpack install $p $f --replace
+
+/usr/sbin/spctl kext-consent add "VB5E2TV963"
+
+
+exit 0
